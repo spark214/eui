@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>0</title>
+    <title>后台管理系统</title>
     <script src="easyui/jquery.min.js" type="text/javascript"></script>
     <script src="easyui/jquery.easyui.min.js" type="text/javascript"></script>
     <script src="easyui/jquery.easyui.min.js" type="text/javascript"></script>
@@ -51,7 +51,7 @@
 
         <div title="商品管理" data-options="iconCls:'icon-reload',selected:true" style="padding:10px;">
             <ul>
-                <li><a href="javascript:void(0)" pageUrl="">商品信息管理</a></li>
+                <li><a href="javascript:void(0)" pageUrl="product_manage.jsp">商品信息管理</a></li>
                 <li><a href="javascript:void(0)" pageUrl="">商品上下架管理</a></li>
             </ul>
         </div>
@@ -63,7 +63,7 @@
 <div region="center"  style="padding:5px;background:#eee;">
     <div id="center-title" class="easyui-tabs" style="width:500px;height:250px;" data-options="fit:true">
         <div title="起始页" style="padding:20px;display: none">
-            欢迎登录ECShop的后台管理系统
+            欢迎登录后台管理系统
         </div>
     </div>
 </div>
