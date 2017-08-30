@@ -21,7 +21,20 @@
 <script type="text/javascript">
     $(function () {
         $("#list").datagrid({
-
+            url:"product.json",
+            columns:[[
+                {field:"productid",title:"商品编号",width:100,checkbox:true},
+                {field:"productname",title:"商品名称",width:150},
+                {field:"unitcost",title:"商品价格",width:150},
+                {field:"status",title:"商品状态",width:150,formatter:function (values,row,index) {
+                    if(values!=null){
+                        return values=="p"?"<font color='green'>有货</font>":"<font color='red'>缺货</font>";
+                    }
+                    else
+                        return ;
+                }},
+            ]],
+            pagination:true,
         });
     });
 </script>

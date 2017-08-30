@@ -80,7 +80,7 @@
             else {
                 $("#center-title").tabs("add",{
                     title:title,
-                    content:"<iframe src'"+pageUrl+"' width='100%' height='100%' frameborder='0'></iframe>",
+                    content:"<iframe src='"+pageUrl+"' width='100%' height='100%' frameborder='0'></iframe>",
                     closable:true
                 });
             }
